@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags essenciais para responsividade e caracteres -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuery para interatividade e ScrollReveal para animações -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Landing page</title>
+</head>
+
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <nav id="navbar">
+            <!-- Logotipo do site -->
+            <i class="fa-solid fa-burger" id="navLogo">food</i>
+
+            <!-- Lista de navegação principal -->
+            <ul id="navList">
+                <li class="navItem active"><a href="#home">Início</a></li>
+                <li class="navItem"><a href="#menu">Cardápio</a></li>
+                <li class="navItem"><a href="#testimonials">Avaliações</a></li>
+            </ul>
+
+            <!-- Botão para realizar pedido -->
+            <button class="btnDefault">Peça aqui</button>
+
+            <!-- Botão para abrir o menu mobile -->
+            <button id="mobileBtn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+
+        <!-- Menu para dispositivos móveis -->
+        <div id="mobileMenu">
+            <ul id="mobileNavList">
+                <li class="navItem"><a href="#home">Início</a></li>
+                <li class="navItem"><a href="#menu">Cardápio</a></li>
+                <li class="navItem"><a href="#testimonials">Avaliações</a></li>
+            </ul>
+            <button class="btnDefault">Peça aqui</button>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main id="content">
+        <!-- Seção inicial com chamada principal (hero section) -->
+        <section id="home">
+            <div class="shape">
+                <!-- Call to Action -->
+                <div id="cta">
+                    <h1 class="title">O sabor que vai até <span>você</span></h1>
+                    <p class="description">Lorem ipsum dolor sit amet. Sed tempore perferendis et cumque modi aut
+                        molestiae esse qui atque doloremque.</p>
+
+                    <div class="ctaButtons">
+                        <!-- Botão para ver o cardápio -->
+                        <a href="#menu" class="btnDefault">Ver cardápio</a>
+                        <!-- Botão com número para ligar -->
+                        <a href="tel:+5511958750791" id="phoneButton">
+                            <button class="btnDefault"><i class="fa-solid fa-phone"></i></button>
+                            (11) 95875-0791
+                        </a>
+                    </div>
+
+                    <!-- Links para redes sociais -->
+                    <div class="socialMediaButtons">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner com imagem de destaque -->
+            <div id="banner">
+                <img src="./assets/img/hero.png" alt="pratos">
+            </div>
+        </section>
+
+        <!-- Seção do cardápio -->
+        <section id="menu">
+            <h2 class="sectionTitle">Cardápio</h2>
+            <h3 class="sectionSubtitle">Nossos pratos</h3>
+            <div id="dishes">
+                <!-- Exemplo de um prato -->
+                <div class="dish">
+                    <div class="dishHeart"><i class="fa-solid fa-heart"></i></div>
+                    <img src="./assets/img/dish.png" class="dishImage" alt="prato-1">
+                    <h3 class="dishTitle">Lorem Ipsun</h3>
+                    <span class="dishDescription">Lorem ipsum dolor sit amet. Et incidunt dolore rem dolorem totam aut
+                        nisi consequuntur.</span>
+                    <div class="dishRate">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dishPrice">
+                        <h4>R$20,00</h4>
+                        <button class="btnDefault"><i class="fa-solid fa-basket-shopping"></i></button>
+                    </div>
+                </div>
+                <!-- Repetição dos blocos de pratos -->
+                <div class="dish">
+                    <div class="dishHeart"><i class="fa-solid fa-heart"></i></div>
+                    <img src="./assets/img/dish2.png" class="dishImage" alt="prato-1">
+                    <h3 class="dishTitle">Lorem Ipsun</h3>
+                    <span class="dishDescription">Lorem ipsum dolor sit amet. Et incidunt dolore rem dolorem totam aut
+                        nisi consequuntur.</span>
+                    <div class="dishRate">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dishPrice">
+                        <h4>R$20,00</h4>
+                        <button class="btnDefault"><i class="fa-solid fa-basket-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dishHeart"><i class="fa-solid fa-heart"></i></div>
+                    <img src="./assets/img/dish3.png" class="dishImage" alt="prato-1">
+                    <h3 class="dishTitle">Lorem Ipsun</h3>
+                    <span class="dishDescription">Lorem ipsum dolor sit amet. Et incidunt dolore rem dolorem totam aut
+                        nisi consequuntur.</span>
+                    <div class="dishRate">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dishPrice">
+                        <h4>R$20,00</h4>
+                        <button class="btnDefault"><i class="fa-solid fa-basket-shopping"></i></button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dishHeart"><i class="fa-solid fa-heart"></i></div>
+                    <img src="./assets/img/dish4.png" class="dishImage" alt="prato-1">
+                    <h3 class="dishTitle">Lorem Ipsun</h3>
+                    <span class="dishDescription">Lorem ipsum dolor sit amet. Et incidunt dolore rem dolorem totam aut
+                        nisi consequuntur.</span>
+                    <div class="dishRate">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dishPrice">
+                        <h4>R$20,00</h4>
+                        <button class="btnDefault"><i class="fa-solid fa-basket-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de depoimentos -->
+        <section id="testimonials">
+            <img src="./assets/img/chef.png" class="testimonialsChef" alt="chefe-de-cozinha">
+            <div id="testimonialsContent">
+                <h2 class="sectionTitle">Depoimentos</h2>
+                <h3 class="sectionSubtitle">O que os clientes falam sobre nós</h3>
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="./assets/img/avatar.png" class="feedbackAvatar" alt="avatar">
+                        <div class="feedbackContent">
+                            <p>Maria Clara <span><i class="fa-solid fa-star"></i></span></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi modi fuga magni
+                                officia dolorum, ullam ea voluptas laborum rem itaque eveniet vitae odio eius? Sapiente
+                                quisquam quae aliquam laudantium!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btnDefault">Ver mais avaliações</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <img src="./assets/img/wave.svg" alt="wave">
+        <div id="footerItems">
+            <span id="copyright">&copy 2024 - Douglas Lobo</span>
+            <div class="socialMediaButtons">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript principal -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
